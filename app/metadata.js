@@ -7,3 +7,4 @@ export const metadata = {
     icon: "/weblogo.png", // make sure this is inside /public
   },
 };
+

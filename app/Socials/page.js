@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "@/components/ui/button";
 import {
   faGithub,
@@ -20,6 +21,7 @@ import {
   MapPin,
   Mars,
   Phone,
+  Printer,
   User,
 } from "lucide-react";
 import Link from "next/link";
@@ -42,11 +44,22 @@ const Socials = () => {
       isExternal: true,
     },
     { icon: <Mars />, desc: "he/him", href: null },
+    
   ];
+
+ const HandlePrint = () => {
+  const printContents = document.getElementById("Social_Part").innerHTML; // ✅ no "#"
+  const originalContents = document.body.innerHTML;
+
+  document.body.innerHTML = printContents;
+  window.print();
+  document.body.innerHTML = originalContents;
+};
+
 
   return (
     <div className="w-screen h-full border-b border-gray-300 dark:border-neutral-800 flex flex-col items-center justify-center">
-      <div className="md:w-[768px] w-screen flex border-l border-r border-gray-300 dark:border-neutral-800 flex-col space-y-1 py-4">
+      <div id="Social_Part" className="md:w-[768px] w-screen flex border-l border-r border-gray-300 dark:border-neutral-800 flex-col space-y-1 py-4">
         {Links.map((link, index) => (
           <div
             key={index}
@@ -77,6 +90,8 @@ const Socials = () => {
           </div>
         ))}
       </div>
+            <Button  onClick={HandlePrint}
+            className="border-2px rounded-full dark:border-white   w-fit "> <Printer/> Print</Button>
 
       <div className="design_2 border-t-[1px] border-gray-300 dark:border-neutral-800  flex items-center justify-center w-screen ">
         <div className="w-[768px] border-l-[1px] border-r-[1px] border-gray-300 dark:border-neutral-800   py-5"></div>
