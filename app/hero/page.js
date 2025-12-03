@@ -44,25 +44,28 @@ const Hero = () => {
         <div className="w-screen border-b border-gray-300 dark:border-neutral-800 flex items-center justify-center">
           <div className="flex items-center w-[768px] border-x border-gray-300 dark:border-neutral-800">
             {/* Avatar */}
-            <div className="relative p-1 border-r border-gray-300 dark:border-neutral-800 flex-shrink-0">
-              <Image
-  alt="Sameer (creator image)"
-  width={140}
-  height={120}
-  src="/Sameer_ai.png"
-  className="rounded-[20px] border-[1px]  hover:cursor-pointer p-1 border-gray-300 dark:border-neutral-700"
-/>
-              {/* Flag overlay */}
-              <div className="absolute  top-[-10px] left-[-5px] w-16 h-16 text-xs flex items-center justify-center">
-                <Image
-                  alt="India flag"
-                  width={150}
-                  height={150}
-                  src="/India.svg"
-                  className="p-1 rounded-full"
-                />
-              </div>
-            </div>
+            <div className="relative p-1 border-r border-gray-300 dark:border-neutral-800 flex-shrink-0 w-[140px]">
+  <Image
+    alt="Sameer (creator image)"
+    width={140}
+    height={120}
+    src="/Sameer_ai.png"
+    priority   
+    className="rounded-[20px] size-1 border-[1px] p-1 border-gray-300 dark:border-neutral-700"
+  />
+
+  {/* Flag overlay */}
+  <div className="absolute top-[-8px] left-[-8px] w-10 h-10 text-xs flex items-center justify-center">
+    <Image
+      alt="India flag"
+      src="/India.svg"
+      width={40}   // Load only what you need
+      height={40}
+      priority
+      className="rounded-full"
+    />
+  </div>
+</div>
 
             {/* Text Block */}
             <div className="flex flex-col h-full flex-1 min-w-0">
