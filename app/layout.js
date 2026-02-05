@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Pixelify_Sans } from "next/font/google";
+import {IBM_Plex_Mono,  Geist, Geist_Mono, Pixelify_Sans } from "next/font/google";
 import "./globals.css";
 import { metadata } from "./metadata";
 import { ThemeProvider } from "@/components/themeprovider";
@@ -22,7 +22,10 @@ const pixelifySans = Pixelify_Sans({
   weight: ["400", "700"],
 });
 
-
+const mono=IBM_Plex_Mono({
+    subsets : ["latin"] ,
+    weight  : ["400" , "500", "600"]
+})
 export {metadata}
 
 export default function RootLayout({ children }) {
