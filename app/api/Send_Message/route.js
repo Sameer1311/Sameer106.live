@@ -36,3 +36,4 @@ Message: ${Message}
     return NextResponse.json({ success: false, message: "Email failed to send" }, { status: 500 });
   }
 }
+
