@@ -22,10 +22,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="w-screen h-full border-b border-gray-300 dark:border-neutral-800 flex flex-col items-center justify-center">
-      <div className="flex items-center justify-center flex-col">
+    <section className="flex flex-col items-center justify-center w-screen h-full border-b border-gray-300 dark:border-neutral-800">
+      <div className="flex flex-col items-center justify-center">
         {/* outer */}
-        <div className="w-screen border-b border-gray-300 dark:border-neutral-800 flex items-center justify-center">
+        <div className="flex items-center justify-center w-screen border-b border-gray-300 dark:border-neutral-800">
           <div className="relative">
             {/* SM text */}
             <div className="md:w-[768px] w-screen font-pixelify text-8xl design flex items-center justify-center border-x border-gray-300 dark:border-neutral-800 p-2 py-20">
@@ -34,17 +34,17 @@ const Hero = () => {
 
             {/* Active Now badge */}
             <div className="absolute top-[40%] left-[67%] md:top-1/3 md:left-[27%] w-fit flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/100 border border-green-500  text-xs font-semibold shadow-lg animate-pulse">
-              <span className="w-2 h-2 bg-slate-900 rounded-full animate-ping"></span>
+              <span className="w-2 h-2 rounded-full bg-slate-900 animate-ping"></span>
               Active Now
             </div>
           </div>
         </div>
 
         {/* second */}
-        <div className="w-screen border-b border-gray-300 dark:border-neutral-800 flex items-center justify-center">
+        <div className="flex items-center justify-center w-screen border-b border-gray-300 dark:border-neutral-800">
           <div className="flex items-center w-[768px] border-x border-gray-300 dark:border-neutral-800">
             {/* Avatar */}
-            <div className="relative p-1 border-r border-gray-300 dark:border-neutral-800 flex-shrink-0">
+            <div className="relative flex-shrink-0 p-1 border-r border-gray-300 dark:border-neutral-800">
               <Image
   alt="Sameer (creator image)"
   width={140}
@@ -65,17 +65,17 @@ const Hero = () => {
             </div>
 
             {/* Text Block */}
-            <div className="flex flex-col h-full flex-1 min-w-0">
+            <div className="flex flex-col flex-1 h-full min-w-0">
               <div className="relative px-10 pt-[3.5rem] pb-[2.5rem] design_2">
-                <p className="absolute bottom-0 left-4  text-gray-500   dark:text-neutral-700  font-mono   text-sm">
+                <p className="absolute bottom-0 font-mono text-sm text-gray-500 left-4 dark:text-neutral-700">
                   text-3xl font-mono font-medium
                 </p>
               </div>
 
-              <div className="bg-diagonal-stripes px-4 py-2 border-y border-gray-300 dark:border-neutral-800">
-                <span className="text-2xl font-pixelify font-bold text-black dark:text-white flex items-center gap-2">
+              <div className="px-4 py-2 border-gray-300 bg-diagonal-stripes border-y dark:border-neutral-800">
+                <span className="flex items-center gap-2 text-2xl font-bold text-black font-pixelify dark:text-white">
                   Sameer Negi
-                  <CheckCircle className="text-blue-500 w-5 h-5" />
+                  <CheckCircle className="w-5 h-5 text-blue-500" />
                 </span>
               </div>
 
@@ -99,7 +99,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="design_2 flex items-center justify-center w-screen">
+      <div className="flex items-center justify-center w-screen design_2">
         <div className="w-[768px] border-x border-gray-300 dark:border-neutral-800 py-5"></div>
       </div>
     </section>

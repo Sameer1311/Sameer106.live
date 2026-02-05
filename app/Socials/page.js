@@ -21,7 +21,6 @@ import {
   MapPin,
   Mars,
   Phone,
-  Printer,
   User,
 } from "lucide-react";
 import Link from "next/link";
@@ -47,18 +46,11 @@ const Socials = () => {
     
   ];
 
- const HandlePrint = () => {
-  const printContents = document.getElementById("Social_Part").innerHTML; // ✅ no "#"
-  const originalContents = document.body.innerHTML;
-
-  document.body.innerHTML = printContents;
-  window.print();
-  document.body.innerHTML = originalContents;
-};
+ 
 
 
   return (
-    <div className="w-screen h-full border-b border-gray-300 dark:border-neutral-800 flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center w-screen h-full border-b border-gray-300 dark:border-neutral-800">
       <div id="Social_Part" className="md:w-[768px] w-screen flex border-l border-r border-gray-300 dark:border-neutral-800 flex-col space-y-1 py-4">
         {Links.map((link, index) => (
           <div
@@ -78,7 +70,7 @@ const Socials = () => {
                 href={link.href}
                 target={link.isExternal ? "_blank" : "_self"}
                 rel="noopener noreferrer"
-                className="font-mono text-black dark:text-white hover:underline underline-offset-4 transition-all delay-300"
+                className="font-mono text-black transition-all delay-300 dark:text-white hover:underline underline-offset-4"
               >
                 {link.desc}
               </Link>
@@ -90,8 +82,7 @@ const Socials = () => {
           </div>
         ))}
       </div>
-            <Button  onClick={HandlePrint}
-            className="border-2px rounded-full dark:border-white   w-fit "> <Printer/> Print</Button>
+          
 
       <div className="design_2 border-t-[1px] border-gray-300 dark:border-neutral-800  flex items-center justify-center w-screen ">
         <div className="w-[768px] border-l-[1px] border-r-[1px] border-gray-300 dark:border-neutral-800   py-5"></div>
@@ -114,7 +105,7 @@ const Socials = () => {
               />
               <span className="flex flex-col justify-center">
                 <b>LinkedIn</b>
-                <p className="text-black dark:text-gray-500 font-mono">
+                <p className="font-mono text-black dark:text-gray-500">
                   Sameer1311
                 </p>
               </span>
@@ -130,14 +121,14 @@ const Socials = () => {
             target="_blank"
             className="md:w-[384px]  border-t-[1px] md:border-t-[0px] border-gray-300 dark:border-neutral-800 w-full p-5 border-l-[1px] border-r-[1px] flex items-center justify-between hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-all"
           >
-            <div className="flex  items-center justify-center space-x-5">
+            <div className="flex items-center justify-center space-x-5">
               <FontAwesomeIcon
                 icon={faGithub}
                 className="text-black dark:text-white text-[40px] rounded-md"
               />
               <span className="flex flex-col justify-center">
                 <b>GitHub</b>
-                <p className="text-black dark:text-gray-500 font-mono">
+                <p className="font-mono text-black dark:text-gray-500">
                   Sameer1311
                 </p>
               </span>
@@ -165,7 +156,7 @@ const Socials = () => {
               />
               <span className="flex flex-col justify-center">
                 <b>LeetCode</b>
-                <p className="text-black dark:text-gray-500 font-mono">
+                <p className="font-mono text-black dark:text-gray-500">
                   CodeSameer
                 </p>
               </span>
@@ -188,7 +179,7 @@ const Socials = () => {
               />
               <span className="flex flex-col justify-center">
                 <b>WhatsApp</b>
-                <p className="text-black dark:text-gray-500 font-mono">
+                <p className="font-mono text-black dark:text-gray-500">
                   9058420228
                 </p>
               </span>
@@ -203,7 +194,7 @@ const Socials = () => {
         <div className="flex md:w-[768px] w-screen flex-col md:flex-row items-center justify-center">
       
           <a
-            href="/pdfs/Sameer_Negi_Resume.docx"
+            href="/pdfs/Sameer-Negi-Resume.pdf"
             download
             target="_blank"
             className="md:w-[384px] w-full p-5 border-l-[1px] border-r-[1px] dark:border-neutral-800 border-gray-300 flex items-center justify-between hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-all"
@@ -215,7 +206,7 @@ const Socials = () => {
               />
               <span className="flex flex-col justify-center">
                 <b>Resume</b>
-                <p className="text-black dark:text-gray-500 font-mono">
+                <p className="font-mono text-black dark:text-gray-500">
                   Resume...
                 </p>
               </span>
@@ -238,7 +229,7 @@ const Socials = () => {
               />
               <span className="flex flex-col justify-center">
                 <b>Youtube</b>
-                <p className="text-black dark:text-gray-500 font-mono">
+                <p className="font-mono text-black dark:text-gray-500">
                  sameernegi2177 
                 </p>
               </span>
@@ -252,7 +243,7 @@ const Socials = () => {
       
     </div>
 
-      <div className="design_2  flex items-center justify-center w-screen ">
+      <div className="flex items-center justify-center w-screen design_2 ">
         <div className="md:w-[768px] w-screen border-l-[1px] border-r-[1px] border-gray-300 dark:border-neutral-800   py-5"></div>
       </div>
     </div>
