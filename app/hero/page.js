@@ -80,7 +80,7 @@ const Hero = () => {
               </div>
 
               {/* Animated Skills */}
-              <div className="px-4 py-2 text-sm dark:text-zinc-400 font-mono h-[24px] overflow-hidden">
+              <div className="px-4 py-2 text-sm dark:text-zinc-400 font-mono h-[24px] flex items-center overflow-hidden">
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={skills[index]}
@@ -88,7 +88,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.5 }}
-                    className="block"
+                    className="block "
                   >
                     {skills[index]}
                   </motion.span>

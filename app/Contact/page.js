@@ -44,7 +44,7 @@ const ContactForm = () => {
       {/* Header */}
       <div className="w-screen flex items-center justify-center border-b border-gray-300 dark:border-neutral-800">
         <div className="w-[768px] py-2 border-l border-r border-gray-300 dark:border-neutral-800">
-          <span className="mx-4 font-bold text-3xl">Contact-me</span>
+          <span className="mx-4 font-bold text-3xl my-2">Contact-me</span>
         </div>
       </div>
 

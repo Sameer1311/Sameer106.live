@@ -103,7 +103,7 @@ const Project = () => {
     <div className="w-screen flex items-center justify-center flex-col">
       {/* Header */}
       <span className="w-full md:w-[768px] mx-4 font-bold text-3xl border-l border-r border-gray-300 dark:border-neutral-800">
-        <p className="mx-4">Projects</p>
+        <p className="mx-4 py-2">Projects</p>
       </span>
 
       {/* Projects */}

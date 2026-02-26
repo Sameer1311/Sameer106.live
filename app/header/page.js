@@ -18,11 +18,11 @@ const NavLinks = ({ onLinkClick }) => (
       Daifolio
     </Link>
     <Link
-      href="/"
+      href="#experience"
       onClick={onLinkClick}
       className="font-mono text-m  text-gray-500 hover:text-foreground transition-all duration-300"
     >
-      Home
+        Experience
     </Link>
     <Link
       href="/Comp_page"
@@ -58,10 +58,10 @@ const Header = () => {
       Daifolio
     </Link>
     <Link
-      href="/"
+      href="#experience"
       className="font-mono text-m  text-gray-500 hover:text-foreground transition-all duration-300"
     >
-      Home
+        Experience
     </Link>
     <Link
       href="/Comp_page"

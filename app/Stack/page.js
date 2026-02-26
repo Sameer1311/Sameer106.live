@@ -53,8 +53,8 @@ export default function Stack() {
   return (
     <div className="w-screen flex flex-col items-center justify-center">
       <div className="w-screen flex items-center justify-center border-b-[1px] border-gray-300 dark:border-neutral-800">
-        <div className="w-[768px] border-l-[1px] border-r-[1px] border-gray-300 dark:border-neutral-800">
-          <span className="mx-4 font-bold text-3xl">Tech Stack</span>
+        <div className="w-[768px] border-l-[1px] py-2 border-r-[1px] border-gray-300 dark:border-neutral-800">
+          <span className="mx-4 font-bold text-3xl ">Tech Stack</span>
         </div>
       </div>
 

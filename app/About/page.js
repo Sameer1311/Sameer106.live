@@ -53,8 +53,8 @@ const About = () => {
     <section id="About" className="w-screen border-b border-gray-300 dark:border-neutral-800">
       {/* Heading */}
       <div className="w-screen border-b border-gray-300 dark:border-neutral-800 flex items-center justify-center">
-        <div className="w-[768px] border-l border-r border-gray-300 dark:border-neutral-800">
-          <span className="mx-4 font-bold text-3xl">About</span>
+        <div className="w-[768px] border-l border-r py-2  border-gray-300 dark:border-neutral-800">
+          <span className="mx-4 font-bold text-3xl ">About</span>
         </div>
       </div>
 
