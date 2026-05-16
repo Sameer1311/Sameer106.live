@@ -194,7 +194,7 @@ const Socials = () => {
         <div className="flex md:w-[768px] w-screen flex-col md:flex-row items-center justify-center">
       
           <a
-            href="/pdfs/Sameer-Negi-Resume.pdf"
+            href="/pdfs/Sameer_Negi_Resume_2026.pdf"
             download
             target="_blank"
             className="md:w-[384px] w-full p-5 border-l-[1px] border-r-[1px] dark:border-neutral-800 border-gray-300 flex items-center justify-between hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-all"
